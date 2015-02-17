@@ -48,11 +48,14 @@ namespace AIExploration
         void myBrowser_DocumentCompleted( object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             var br = sender as WebBrowser;
+            br.Visible = true;
             if (br.Url == e.Url)
             {
                 Console.WriteLine("Navigated to {0}", e.Url);
                 Application.ExitThread();
             }
+            int x = br.Document.All.Count;
+            Console.WriteLine(x.ToString());
         }
 
         public void TestReddit()
