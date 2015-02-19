@@ -42,8 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="beta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PatternMatchers\SentencePatternMatcher.cs" />
     <Compile Include="WebScraper.cs" />
   </ItemGroup>
   <ItemGroup>
